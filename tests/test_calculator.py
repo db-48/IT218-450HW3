@@ -1,10 +1,18 @@
 ''' My Calculator Test'''
-from calculator import add, subtract
+from calculator import Calculator
 
 def test_addition():
     ''' Testing addition function'''
-    assert add(2, 2) == 4
+    assert Calulator.add(2, 2) == 4
 
 def test_subtraction():
     ''' Testing the subtraction function'''
-    assert subtract(2, 2) == 0
+    assert Calculator.subtract(2, 2) == 0
+
+def test_multiply():
+    ''' Testing the multiplication function'''
+    assert Calculator.multiply(2, 2) == 4
+
+def test_divide():
+    ''' Testing the divison function'''
+    assert Calculator.divide(2, 2) == 1
