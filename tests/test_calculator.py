@@ -3,7 +3,7 @@ from calculator import Calculator
 
 def test_addition():
     ''' Testing addition function'''
-    assert Calulator.add(2, 2) == 4
+    assert Calculator.add(2, 2) == 4
 
 def test_subtraction():
     ''' Testing the subtraction function'''
