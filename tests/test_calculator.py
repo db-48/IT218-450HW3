@@ -16,3 +16,4 @@ def test_multiply():
 def test_divide():
     ''' Testing the divison function'''
     assert Calculator.divide(2, 2) == 1
+    
