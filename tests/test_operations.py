@@ -16,3 +16,4 @@ def test_divide_by_zero():
         calculation = Calculation(Decimal('10'), Decimal('0'), divide)
         calculation.perform()
         
+        
