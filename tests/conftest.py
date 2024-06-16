@@ -3,7 +3,7 @@ This module contains pytest config and test data.
 """
 # conftest.py
 from decimal import Decimal
-import pytest
+import pytest # type: ignore
 from faker import Faker
 from calculator.operations import add, subtract, multiply, divide
 

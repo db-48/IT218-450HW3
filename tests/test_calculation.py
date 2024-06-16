@@ -14,7 +14,7 @@ as well as the functionality of the Calculation class that encapsulates these op
 # Import the arithmetic operation functions (add, subtract, multiply, divide) to be tested.
 # pylint: disable=unnecessary-dunder-call, invalid-name
 from decimal import Decimal
-import pytest
+import pytest # type: ignore
 from calculator.calculation import Calculation
 from calculator.operations import add, subtract, multiply, divide
 
