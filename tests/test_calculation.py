@@ -61,3 +61,4 @@ def test_divide_by_zero():
     with pytest.raises(ValueError, match="Cannot divide by zero"):  # Expect a ValueError to be raised.
         calc.perform()  # Attempt to perform the calculation, which should trigger the ValueError.
         
+        
