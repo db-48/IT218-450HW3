@@ -3,7 +3,7 @@ This module contains pytest config and test data.
 """
 # conftest.py
 from decimal import Decimal
-import pytest 
+import pytest
 from faker import Faker
 from calculator.operations import add, subtract, multiply, divide
 
@@ -18,6 +18,7 @@ def generate_test_data(num_records):
         'multiply': multiply,
         'divide': divide
     }
+
     # Generate test data
     for _ in range(num_records):
         a = Decimal(fake.random_number(digits=2))
@@ -33,9 +34,9 @@ def generate_test_data(num_records):
             else:
                 expected = operation_func(a, b)
         except ZeroDivisionError:
-            expected = "ZeroDivisionError"    
-        yield a, b, operation_name, operation_func, expected
-        
+            expected = "ZeroDivisionError"
+            yield a, b, operation_name, operation_func, expected
+
 def pytest_addoption(parser):
     """ options for pytest"""
     parser.addoption("--num_records", action="store", default=5, type=int, help="Number of test records to generate")
