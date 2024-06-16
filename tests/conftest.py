@@ -14,6 +14,7 @@ def generate_test_data(num_records):
         'multiply': multiply,
         'divide': divide
     }
+    
     # Generate test data
     for _ in range(num_records):
         a = Decimal(fake.random_number(digits=2))
